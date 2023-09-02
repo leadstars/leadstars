@@ -1,0 +1,138 @@
+body{
+
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #05073a, hsl(197, 83%, 62%));
+    margin-top: 1rem;
+}
+.containers{
+    justify-content: center;
+    max-width: 1900px;
+    width: 80%;
+    padding: 80px;
+    margin-left: 35px;
+    border-radius: 25px;
+    background: linear-gradient(-135deg, #05073a, hsl(197, 83%, 62%));
+    padding: 50px;
+    margin: auto;
+}
+.containers .headings{
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.containers .headings::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(-135deg, #05073a, hsl(197, 83%, 62%));
+
+}
+.containers form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+
+
+.pada__logo img {
+    width: 40%;
+    padding: 0.4rem;
+}
+
+
+
+
+
+
+.card-details .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: #9b59b6;
+}
+form .crical-form .crical-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+
+}
+form .crical-form .category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px; 
+    height: 100%;
+    width: 80%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    background: linear-gradient(-135deg, #05073a, hsl(197, 83%, 62%));
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #05073a, hsl(0, 100%, 50%));
+}
+
+
+
+
+
+
+
+
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .crical-form .category{
+        width: 100%;
+    }
+    .container form .card-details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-details::_webkit-scrollbar{
+        width: 0;
+    }
+
+}

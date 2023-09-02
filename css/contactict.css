@@ -1,0 +1,130 @@
+.apply__container {
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/*=========== aside ==========*/
+.apply__aside {
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+
+.apply__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+
+.aside__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+.apply__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.apply__aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.apply__details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+ /*---------------- Form ------------------*/
+ .apply__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+    padding-left: 2rem;
+ }
+ .form__name {
+    display: flex;
+    gap: 1.2rem;
+ }
+
+ .apply__form input[type="text"] {
+    width: 50%;
+ }
+ input, textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+ }
+
+ .apply__form .btn {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+ } 
+
+
+ /*=========== Media queries (TABLETS) ==========*/
+
+ @media screen and (max-width: 1024px){
+    .apply {
+        /*padding-bottom: 0;*/
+    }
+
+    .apply__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .apply__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .apply__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+ }
+
+
+ .pada__logo img {
+    width: 40%;
+    padding: 0.4rem;
+}
+
+
+
+ /*=========== Media queries (phones) ==========*/
+
+ @media screen and (max-width: 600px){
+    .apply__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .apply__form {
+        max-resolution: 0 1.5 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"]{
+        width: 100%;
+    }
+ }
